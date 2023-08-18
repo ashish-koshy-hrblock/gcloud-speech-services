@@ -1,0 +1,25 @@
+{
+  "name": "gcloud-speech-services",
+  "version": "1.0.0",
+  "description": "Google Speech services POC",
+  "scripts": {
+    "debug-server": "node ./speech-server/src/app.js",
+    "debug-client": "node ./speech-client/local-debug.js",
+    "debug": "npm-run-all -p debug-server debug-client",
+    "start": "node ./speech-server/src/app.js"
+  },
+  "author": "Ashish Koshy",
+  "dependencies": {
+    "@google-cloud/dialogflow": "^6.0.0",
+    "@google-cloud/dialogflow-cx": "^4.0.0",
+    "@google-cloud/speech": "^5.6.0",
+    "@google-cloud/text-to-speech": "^5.0.0",
+    "dotenv": "^16.3.1",
+    "fs-extra": "^11.1.1",
+    "socket.io": "4.6.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5"
+  }
+}
